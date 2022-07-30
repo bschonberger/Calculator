@@ -99,6 +99,10 @@ function allClear(){
 
 function evaluate(string){
 
+    if ((input.innerHTML == "Calculator") && (cache.innerHTML == "000")){
+        return
+    }
+
     if ((string == "x") || (string == '%') || (string == '-') || (string == '+')){
         if (cache.innerHTML == "000"){
             let inputInt = parseInt(input.innerHTML)
